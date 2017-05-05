@@ -1,0 +1,29 @@
+//
+   Created by _pianoflu on 2016-07-08.
+div.container
+   div.row
+      div.col-xs-12
+         table.table.table-bordered.table-hover
+            th 商铺名称
+            th 评论数目
+            th 商品价格
+               each val in result
+                  if val.comment>300
+                     tr.success
+                        td #{val.name}
+                        td #{val.comment}
+                        td #{val.price}
+                  else if val.comment<300 && val.comment>100
+                     tr.info
+                        td #{val.name}
+                        td #{val.comment}
+                        td #{val.price}
+                  else
+                     tr
+                        td #{val.name}
+                        td #{val.comment}
+                        td #{val.price}
+      //div.col-md-2
+      //   span.label.label-success >300
+      //   span.label.label-info 100~300
+      //   span.label.label-default <100

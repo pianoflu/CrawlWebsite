@@ -1,0 +1,75 @@
+doctype html
+html
+    head
+        title Express
+        link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+        link(rel='stylesheet', href='/stylesheets/site.min.css')
+        script(src='/javascripts/jquery.js')
+        script(src='/javascripts/bootstrap.min.js')
+    body.home-template
+        div.site-notice
+            a(href="localhost:3000")
+                em 获得单个站点的商品信息
+        header.site-header.jumbotron
+            div.site-nav
+                a(href="#") 博客
+                span
+                a(href="#") 关于
+            div.container
+                div.row
+                    div.col-xs-12
+                        h1 解析网站相关信息
+                        p 快速解析给定网站的部分信息
+                        form(action="/" method="get")
+                            div.form-group
+                                input#crawlUrl(class='form-control' name="crawlUrl" placeholder="请输入网址")
+                                button.btn.btn-default(type='submit' style="display:none") submit
+        div.mostused-packages.well.well-sm.text-center.hidden-xs.hidden-sm
+            ul.list-inline
+                li
+                    span.glyphicon.glyphicon-shopping-cart
+                li
+                    span.glyphicon.glyphicon-glass
+                li
+                    span.glyphicon.glyphicon-cutlery
+                li
+                    span.glyphicon.glyphicon-user
+                li
+                    span.glyphicon.glyphicon-tags
+                li
+                    span.glyphicon.glyphicon-bookmark
+                li
+                    span.glyphicon.glyphicon-map-marker
+                li
+                    span.glyphicon.glyphicon-adjust
+                li
+                    span.glyphicon.glyphicon-fire
+                li
+                    span.glyphicon.glyphicon-leaf
+                li
+                    span.glyphicon.glyphicon-globe
+                li
+                    span.glyphicon.glyphicon-paperclip
+                li
+                    span.glyphicon.glyphicon-send
+                li
+                    span.glyphicon.glyphicon-tree-conifer
+                li
+                    span.glyphicon.glyphicon-grain
+                li
+                    span.glyphicon.glyphicon-object-align-left
+                li
+                    span.glyphicon.glyphicon-tree-deciduous
+                li
+                    span.glyphicon.glyphicon-apple
+                li
+                    span.glyphicon.glyphicon-lamp
+                li
+                    span.glyphicon.glyphicon-sunglasses
+                li
+                    span.glyphicon.glyphicon-baby-formula
+        include oneRecord
+    footer#footer.footer.hidden-print
+        .container
+            .row
+                .footer-about.col-md-5.col-sm-12 关于此程序
