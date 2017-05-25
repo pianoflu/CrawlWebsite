@@ -13,10 +13,24 @@ According to crawl a special website，we can,undoubtedly , get good date that i
 2. unzip the code package and run command in the unzip directory with the permission of administrator.
 3. run `npm install` .
 4. run `node bin/www`.
-5. type `localhost:3000` in the chorm browser,then it works.
+
+```shell
+npm install
+```
+```shell
+node bin/www
+```
 
 * install the program with docker
+
+1. get the image. `docker pull assertseal/crawlwebsite` .
+2. run the container. `docker run -d --name crawlwebsite -p 3000:3000 assertseal/crawlwebsite` .
+```shell
+$ docker pull assertseal/crawlwebsite
+$ docker run -d --name crawlwebsite -p 3000:3000 assertseal/crawlwebsite
+```
 ## Quick Start
+type `localhost:3000` in the chorm browser,then it works.
 
 [npm-image]: https://img.shields.io/npm/v/express.svg
 [npm-url]: https://npmjs.org/package/express
