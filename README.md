@@ -30,7 +30,7 @@ $ docker pull assertseal/crawlwebsite
 $ docker run -d --name crawlwebsite -p 3000:3000 assertseal/crawlwebsite
 ```
 ## Quick Start
-type `localhost:3000` in the chorm browser,then it works.
+type `localhost:3000` in the chrome browser,then it works.
 
 [npm-image]: https://img.shields.io/npm/v/express.svg
 [npm-url]: https://npmjs.org/package/express
